@@ -1,0 +1,22 @@
+<script>
+
+  var line = "";
+  var rows = 21;
+  var spaces = rows - 1;
+
+  //loop to control rows
+  for (var a = 0; a < rows; a++) {
+
+    //loop to control spaces
+    for (var i = 0; i < spaces; i++) {
+      line += "-";
+    }
+    for (var b = 0; b < a + 1; b++) {
+      line += "* ";
+    }
+    console.log(line);
+    line = "";
+    spaces -= 1;
+  }
+
+</script>
