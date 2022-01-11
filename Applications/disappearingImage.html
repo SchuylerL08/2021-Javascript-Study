@@ -1,0 +1,34 @@
+
+<!--
+    Want to make a button to make a specific image disappear
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disappearing Image</title>
+
+    <script>
+        function byeBye(){
+            var image = document.getElementById("formerPresidentBarackObama");
+            image.style.display = "none";
+
+            var surpriseImage = document.getElementById("surprise");
+            surpriseImage.style.display = "block";
+
+        }
+    </script>
+
+
+</head>
+<body>
+<div>
+<button type="button" onClick="byeBye()">Click for a surprise</button>
+</div>
+<img id="formerPresidentBarackObama" src="img/Obama.jpg" height="200" width="200"/>
+<img id="surprise" src="img/Obamium.jpg" height="200" style="display: none"/>
+
+</body>
+</html>
