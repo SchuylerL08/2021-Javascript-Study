@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disappearing Image</title>
+
+    <script>
+        function big() {
+            var image = document.getElementById("formerPresidentBarackObama");
+            Height: 900;
+        }
+
+        function showButton() {
+            var image = document.getElementById("button");
+            image.style.display = "block";
+        }
+    </script>
+
+</head>
+<body>
+
+<button style="display:none" id="button" type="button" onMouseOver="big()">Click for a surprise</button>
+
+<div style="background:cyan" id="text" onClick="showButton()">Text</div>
+
+<img id="formerPresidentBarackObama" src="img/Obama.jpg" height="200" width="200"/>
+
+
+</body>
+</html>
