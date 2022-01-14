@@ -6,25 +6,25 @@
 
     <script>
         function big() {
-            var image = document.getElementById("formerPresidentBarackObama");
-            Height: 900;
+            var img = document.getElementById("image");
+            img.style.height = "200px";
+            img.style.width = "2000px";
         }
 
         function showButton() {
-            var image = document.getElementById("button");
-            image.style.display = "block";
+            var btn = document.getElementById("button");
+            btn.style.display = "block";
         }
     </script>
 
 </head>
 <body>
 
-<button style="display:none" id="button" type="button" onMouseOver="big()">Click for a surprise</button>
+<img src="img/Obama.jpg" id="image" height="200"/>
 
 <div style="background:cyan" id="text" onClick="showButton()">Text</div>
 
-<img id="formerPresidentBarackObama" src="img/Obama.jpg" height="200" width="200"/>
-
+<button id="button" style="display:none" type="button" onMouseOver="big()">Hover for a surprise</button>
 
 </body>
 </html>
